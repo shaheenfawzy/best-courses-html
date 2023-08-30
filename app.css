@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "NotoSans-Medium";
+  src: url(fonts/NotoSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: "NotoSans-Light";
+  src: url(fonts/NotoSans-Light.ttf);
+}
+
+:root {
+  --primary: #55aa93;
+  --secondary: #c0e863;
+  --gold-background: #f4eecd;
+  --gold-text: #d7bf46;
+  --gray: #bbbbbb;
+  --radius: 13px;
+}
+
+body {
+  font-family: "NotoSans-Medium";
+}
+
+body .container {
+  margin-top: 94px;
+}
+
+.container {
+  max-width: 90%;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.text-secondary {
+  color: var(--secondary) !important;
+}
+
+.text-gray {
+  color: var(--gray);
+}
+
+.bg-light {
+  background-color: #f8f8f8 !important;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary) !important;
+}
+
+.letter-spaced {
+  letter-spacing: 3px;
+}
+
+.search input {
+  border-radius: 13px;
+}
+
+button {
+  border-radius: var(--radius) !important;
+}
+
+input::placeholder {
+  color: var(--gray) !important;
+  padding-left: 20px;
+}
+
+.heading {
+  margin-bottom: 4rem;
+}
+
+.course {
+  position: relative;
+  border-radius: 40px;
+}
+
+.course .icon {
+  width: 100px;
+  position: relative;
+  top: -5px;
+  left: -5px;
+}
+
+.course .best-seller {
+  border-radius: var(--radius);
+  background-color: var(--gold-background);
+  color: var(--gold-text);
+  position: absolute;
+  top: 23px;
+  right: 23px;
+}
+
+.course .category {
+  letter-spacing: 2px;
+  color: var(--gray);
+}
+
+.rating .la-star {
+  color: #ffd023;
+}
+
+@media (min-width: 768px) {
+  .col-md-4 {
+    width: 31% !important;
+  }
+}
+
+.container-fluid {
+  width: 97% !important;
+  border-radius: 40px;
+}
+
+.subtext {
+  line-height: 1.7rem;
+}
+
+.steps .step-container {
+  height: 77px !important;
+  width: 77px !important;
+  text-align: center;
+  border-radius: 50%;
+  color: black;
+  background-color: rgb(248, 249, 250);
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.steps .step-container h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: bolder;
+}
+
+.steps .step-container.step-1 {
+  color: white;
+  background: linear-gradient(
+    180deg,
+    rgba(74, 171, 159, 1) 0%,
+    rgba(43, 118, 109, 1) 100%
+  );
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.steps .step-container.step-1::after {
+  content: "";
+  position: absolute;
+  height: 80px;
+  width: 8px;
+  top: 70px;
+  background: linear-gradient(
+    180deg,
+    rgba(35, 121, 110, 1) 0%,
+    rgba(221, 234, 232, 0.2) 100%
+  );
+}
+
+.steps .step-container:not(.step-1)::before {
+  content: "";
+  background-color: rgb(248, 249, 250);
+  position: absolute;
+  height: 50px;
+  width: 8px;
+  bottom: 70px;
+}
