@@ -183,51 +183,25 @@ input::placeholder {
   .steps .step-container {
     height: 77px !important;
     width: 77px !important;
-    text-align: center;
-    border-radius: 50%;
-    color: black;
-    background-color: rgb(248, 249, 250);
-    position: relative;
     margin-bottom: 40px;
   }
 
   .steps .step-container span {
-    margin: 0;
-    padding: 0;
     font-weight: bolder;
     font-size: 1.25rem;
   }
 
   .steps .step-container.step-1 {
-    color: white;
-    background: linear-gradient(
-      180deg,
-      rgba(74, 171, 159, 1) 0%,
-      rgba(43, 118, 109, 1) 100%
-    );
-    position: relative;
     margin-bottom: 120px;
   }
 
   .steps .step-container.step-1::after {
-    content: "";
-    position: absolute;
     height: 80px;
-    width: 8px;
     top: 70px;
-    background: linear-gradient(
-      180deg,
-      rgba(35, 121, 110, 1) 0%,
-      rgba(221, 234, 232, 0.2) 100%
-    );
   }
 
   .steps .step-container:not(.step-1)::before {
-    content: "";
-    background-color: rgb(248, 249, 250);
-    position: absolute;
     height: 50px;
-    width: 8px;
     bottom: 70px;
   }
 
