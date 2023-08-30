@@ -22,7 +22,7 @@ body {
 }
 
 body .container {
-  margin-top: 94px;
+  margin-top: 110px;
 }
 
 .container {
@@ -54,7 +54,7 @@ body .container {
 }
 
 .letter-spaced {
-  letter-spacing: 3px;
+  letter-spacing: 5px;
 }
 
 .search input {
